@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Banco de Talentos</title>
+    <link rel="icon" href="favicon.ico">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <link href="Scripts/css/main.css" rel="stylesheet" />
+    <script src="Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <script src="Scripts/Controller/app.js"></script>
+    <script src="Scripts/Controller/configRoute.js"></script>
+
+    <script src="Scripts/Controller/homeController.js"></script>
+    <script src="Scripts/Controller/newController.js"></script>
+    <script src="Scripts/Controller/editController.js"></script>
+
+    <script src="Scripts/directive/questionDirective.js"></script>
+    <script src="Scripts/directive/rateDirective.js"></script>
+
+    <script src="Scripts/Service/questionService.js"></script>
+    <script src="Scripts/Service/rateService.js"></script>
+    <script src="Scripts/Service/baseService.js"></script>
+    <script src="Scripts/Service/initFormService.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body ng-app="myApp" style=" width 50%; margin 0 auto;">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Banco de Talentos</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="waves-effect waves-light btn" href="#!New">New Talent</a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <a class="linkBar" href="#!New">
+                        <i class="large material-icons">add_circle</i>
+                        New Talent
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div ng-view style="margin-top:20px">
+    </div>
+    <div ng-show="loading" class="center-align">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                    <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+            $(".linkBar").click(function () {
+                $('.button-collapse').sideNav('hide');
+            });
+        });
+    </script>
+</body>
+</html>

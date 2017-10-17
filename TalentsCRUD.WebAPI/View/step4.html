@@ -1,0 +1,31 @@
+﻿<h2>Knowledge / Conhecimentos</h2>
+<p class="flow-text">
+    Rate yourself from 0 to 5 for the knowledge specified below, and that's okay if you do not know many things, the important thing is to be honest! / Avalie-se de 0 a 5 quanto aos conhecimentos especificados abaixo, e tudo bem se não souber de muitas coisas, o importante é que seja sincero!
+</p>
+<form ng-submit="submitStep4(talent)" name="formStep4">
+    <div class="row">
+        <div ng-repeat="rate in rates" class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <ng-rate obj="rate"></ng-rate>
+        </div>
+        <div class="col s12 col-xs-12 col-sm-12 col-lg-12">
+            <h5>Do you know any other language or framework that was not listed above? Tell us and evaluate yourself from 0 to 5. / Conhece mais alguma linguagem ou framework que não foi listado aqui em cima? Conte para nos e se auto avalie ainda de 0 a 5.</h5>
+            <input id="OtherTechnology" placeholder="Your Answer" type="text" ng-model="talent.OtherTechnology">
+            
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="LinkCRUD" placeholder="URL" type="text" ng-model="talent.LinkCRUD">
+            <label for="LinkCRUD" data-error="wrong" data-success="right">Link CRUD:</label>
+        </div>        
+        <div class="col s12 col-xs-12 col-sm-12 col-lg-12">
+            <button class="btn waves-effect waves-light left" ng-click="backStep3()" type="button" name="action">
+                Next
+                <i class="material-icons left">keyboard_arrow_left</i>
+            </button>
+            <button class="btn waves-effect waves-light right" ng-disabled="formStep4.$invalid" type="submit" name="action">
+                Send
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        
+    </div>
+</form>

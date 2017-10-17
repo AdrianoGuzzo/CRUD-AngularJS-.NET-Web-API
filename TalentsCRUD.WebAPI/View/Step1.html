@@ -1,0 +1,22 @@
+﻿<p class="flow-text">
+    We appreciate your contact, check that you do not need to fill out the full form if already has this information on its linkedin, and check out the links at the end of the tutorials (developers).
+</p>
+<p class="flow-text">
+    Já agradecemos o seu contato, confira que você não precisa preencher o formulário completo caso já tenha essas informações no seu linkedin, e no final confira os links dos tutoriais (desenvolvedores).
+</p>
+
+<form ng-submit="submitStep1()" name="formStep1">
+    <div class="row">
+        <div class="input-field col col-xs-12 col-sm-12 col-lg-12">
+            <input id="email" placeholder="Email" type="email" ng-model="talent.Email"  required>
+            <label for="email" data-error="wrong" data-success="right">Email Adress <span style="color:red">*</span></label>
+        </div>
+        <div class="col col-xs-12 col-sm-12 col-lg-12">
+            <button class="btn waves-effect waves-light right" type="submit" ng-disabled="formStep1.$invalid" name="action">
+                              
+                Next
+                <i class="material-icons right">keyboard_arrow_right</i>
+            </button>
+        </div>
+    </div>
+</form>

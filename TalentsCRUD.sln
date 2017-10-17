@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{13BD1D5D-B82E-4286-BCA4-959273EE5B51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{3522C96E-82EC-4BE3-9F80-49828DA8F6EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{EA00D1FB-10A3-4CDD-B77C-C453952DE083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentsCRUD.WebAPI", "TalentsCRUD.WebAPI\TalentsCRUD.WebAPI.csproj", "{92FED985-B55B-4965-9214-F0D1E8C2BA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentsCRUD.DBContext", "TalentsCRUD.DBContext\TalentsCRUD.DBContext.csproj", "{0BADA865-830F-4DC9-9BD0-1E43FCE11E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentsCRUD.Model", "TalentsCRUD.Model\TalentsCRUD.Model.csproj", "{F6612151-5FCB-47A9-B3A8-9ECA5BA59401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentsCRUD.Repository", "TalentsCRUD.Repository\TalentsCRUD.Repository.csproj", "{7AE1A463-130D-40A9-9075-B992BBC222A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentsCRUD.Service", "TalentsCRUD.Service\TalentsCRUD.Service.csproj", "{81766E53-A4E9-47CA-8F7F-BB58F84181DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92FED985-B55B-4965-9214-F0D1E8C2BA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FED985-B55B-4965-9214-F0D1E8C2BA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FED985-B55B-4965-9214-F0D1E8C2BA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92FED985-B55B-4965-9214-F0D1E8C2BA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BADA865-830F-4DC9-9BD0-1E43FCE11E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BADA865-830F-4DC9-9BD0-1E43FCE11E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BADA865-830F-4DC9-9BD0-1E43FCE11E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BADA865-830F-4DC9-9BD0-1E43FCE11E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6612151-5FCB-47A9-B3A8-9ECA5BA59401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6612151-5FCB-47A9-B3A8-9ECA5BA59401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6612151-5FCB-47A9-B3A8-9ECA5BA59401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6612151-5FCB-47A9-B3A8-9ECA5BA59401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE1A463-130D-40A9-9075-B992BBC222A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE1A463-130D-40A9-9075-B992BBC222A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE1A463-130D-40A9-9075-B992BBC222A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE1A463-130D-40A9-9075-B992BBC222A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81766E53-A4E9-47CA-8F7F-BB58F84181DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81766E53-A4E9-47CA-8F7F-BB58F84181DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81766E53-A4E9-47CA-8F7F-BB58F84181DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81766E53-A4E9-47CA-8F7F-BB58F84181DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92FED985-B55B-4965-9214-F0D1E8C2BA97} = {13BD1D5D-B82E-4286-BCA4-959273EE5B51}
+		{0BADA865-830F-4DC9-9BD0-1E43FCE11E34} = {3522C96E-82EC-4BE3-9F80-49828DA8F6EA}
+		{F6612151-5FCB-47A9-B3A8-9ECA5BA59401} = {3522C96E-82EC-4BE3-9F80-49828DA8F6EA}
+		{7AE1A463-130D-40A9-9075-B992BBC222A9} = {3522C96E-82EC-4BE3-9F80-49828DA8F6EA}
+		{81766E53-A4E9-47CA-8F7F-BB58F84181DE} = {EA00D1FB-10A3-4CDD-B77C-C453952DE083}
+	EndGlobalSection
+EndGlobal

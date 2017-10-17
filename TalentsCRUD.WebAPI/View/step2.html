@@ -1,0 +1,67 @@
+﻿<h2>Occupation area /Área de atuação</h2>
+<p class="flow-text">
+    If you are a developer or DBA, continue filling out this form / Se você atua como desenvolvedor ou DBA, continue o preenchimento deste formulário
+</p>
+<p class="flow-text">
+    If you act as a designer, fill out the form available at / Se você atua como designer, preencha ao formulário disponível em https://goo.gl/forms/UJl8Oa91ubN3HRUm1
+</p>
+<p class="flow-text">
+    If you work in the administrative, customer service or commercial area, fill out the form available at / Se você atua na área administrativa, atendimento ao cliente ou comercial, preencha ao formulário disponível em  https://goo.gl/forms/0M99jjUwnIAw0flJ2
+</p>
+
+<form ng-submit="submitStep2()" name="formStep2">
+    <div class="row">
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="name" placeholder="Nome/Name" type="text" ng-model="talent.Name" required>
+            <label for="name" data-error="wrong" data-success="right">Nome/Name: <span style="color:red">*</span></label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="State" placeholder="Estado/ State" type="text" ng-model="talent.State" required>
+            <label for="State" data-error="wrong" data-success="right">Estado/ State: <span style="color:red">*</span></label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-sm-6 col-lg-12">
+            <input id="City" placeholder="Cidade / City" type="text" ng-model="talent.City" required>
+            <label for="City" data-error="wrong" data-success="right">Cidade / City: <span style="color:red">*</span></label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Skype" placeholder="Skype" type="text" ng-model="talent.Skype" required>
+            <label for="Skype" data-error="wrong" data-success="right">Skype: <span style="color:red">*</span></label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Phone" placeholder="Telefone/Phone" type="text" ng-model="talent.Phone" required>
+            <label for="Phone" data-error="wrong" data-success="right">Telefone/Phone (Whatsapp): <span style="color:red">*</span></label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Linkedin" placeholder="Linkedin" type="text" ng-model="talent.Linkedin">
+            <label for="Linkedin" data-error="wrong" data-success="right">Linkedin: </label>
+        </div>
+
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Portfolio" placeholder="Portfolio" type="text" ng-model="talent.Portfolio">
+            <label for="Portfolio" data-error="wrong" data-success="right">Portfolio: </label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <ng-question question="Questions.QuestionWillingness" prop="Questions.QuestionWillingness.prop" model="talent">
+            </ng-question>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <ng-question question="Questions.QuestionBestTime" prop="Questions.QuestionBestTime.prop" model="talent">
+            </ng-question>
+        </div>       
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Salary" placeholder="Salary" type="number" ng-model="talent.SalaryHour"required>
+            <label for="Salary" data-error="wrong" data-success="right"> What is your hourly salary requirements? / Qual sua pretensão salarial por hora? <span style="color:red">*</span></label>
+        </div>
+        <div class="col s12 col-xs-12 col-sm-12 col-lg-12">
+            <button class="btn waves-effect waves-light left" ng-click="backStep1()" type="button" name="action">
+                Next
+                <i class="material-icons left">keyboard_arrow_left</i>
+            </button>
+            <button class="btn waves-effect waves-light right" ng-disabled="formStep2.$invalid || isQuestionRequired()" type="submit" name="action">
+                Next
+                <i class="material-icons right">keyboard_arrow_right</i>
+            </button>
+        </div>
+
+    </div>
+</form>

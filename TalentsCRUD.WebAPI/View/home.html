@@ -1,0 +1,24 @@
+﻿<div ng-controller="homeCtrl" class="container">
+    <table class="striped responsive-table" ng-show="list.length>0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in list">
+                <td>{{item.Name}}</td>
+                <td>{{item.State}}</td>
+                <td>{{item.City}}</td>
+                <td>
+                    <a class="btn-floating waves-effect waves-light" style="margin-right:10px" ng-click="edit(item.Id)"><i class="material-icons">edit</i></a>
+                    <a class="btn-floating waves-effect red darken-4" ng-click="delete(item)"><i class="material-icons">delete_forever</i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

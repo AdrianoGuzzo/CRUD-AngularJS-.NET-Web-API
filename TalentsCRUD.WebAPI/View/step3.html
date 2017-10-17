@@ -1,0 +1,53 @@
+﻿<h2>Bank Information / Informação bancária</h2>
+<p class="flow-text">
+    You can choose to receive your payment through Paypal, PagSeguro or conventional bank accounts / Você pode optar em receber seu pagamento pelo Paypal, PagSeguro ou contas bancarias convencionais
+</p>
+<form ng-submit="submitStep3()" name="formStep3">
+    <div class="row">
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="nameBank" placeholder="Name/Nome" type="text" ng-model="talent.Bank.Name">
+            <label for="nameBank" data-error="wrong" data-success="right">Name/Nome:</label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="CPF" placeholder="Only for Brazilians / CPF" type="text" ng-model="talent.Bank.CPF">
+            <label for="CPF" data-error="wrong" data-success="right">Only for Brazilians / CPF:</label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-sm-6 col-lg-12">
+            <input id="Bank" placeholder="Bank / Banco" type="text" ng-model="talent.Bank.NameBank">
+            <label for="Bank" data-error="wrong" data-success="right">Bank / Banco ( Itau, Bradesco, ect..): </label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Agency" placeholder="Agency / Agencia" type="text" ng-model="talent.Bank.Agency">
+            <label for="Agency" data-error="wrong" data-success="right">Agency / Agencia:</label>
+        </div>
+
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <input id="Number" placeholder="Account Number / Número da conta" type="text" ng-model="talent.Bank.Number">
+            <label for="Number" data-error="wrong" data-success="right">Account Number / Número da conta:</label>
+        </div>
+        <div class="input-field col s12 col-xs-12 col-sm-12 col-lg-12">
+            <h4> Account Type / Tipo de conta</h4>
+            <ul class="collection">
+                <li class="collection-item">
+                    <input class="with-gap" name="group" type="radio" ng-model="talent.Bank.Type" id="corrente" value="1" />
+                    <label for="corrente">Chain / Corrente</label>
+                </li>
+                <li class="collection-item">
+                    <input class="with-gap" name="group" ng-model="talent.Bank.Type" type="radio" id="poupanca" value="2" />
+                    <label for="poupanca">Savings / Poupança</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col s12 col-xs-12 col-sm-12 col-lg-12">
+            <button class="btn waves-effect waves-light left" ng-click="backStep2()" type="button" name="action">
+                Next
+                <i class="material-icons left">keyboard_arrow_left</i>
+            </button>
+            <button class="btn waves-effect waves-light right" ng-disabled="formStep3.$invalid" type="submit" name="action">
+                Next
+                <i class="material-icons right">keyboard_arrow_right</i>
+            </button>
+        </div>
+    </div>
+</form>
