@@ -34,7 +34,6 @@
         });             
     };
     $scope.countRate = function (Rate) {
-        console.log(Rate)
         var count =[];
         for (i = 0; i < Rate; i++) {
             count.push(i);
