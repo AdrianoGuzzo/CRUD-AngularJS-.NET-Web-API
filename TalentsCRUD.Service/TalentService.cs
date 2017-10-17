@@ -66,6 +66,24 @@ namespace TalentsCRUD.Service
                 City = x.City,
             });
         }
+        public object ViewTalent(Guid Id)
+        {
+            var model = talentRepository.Get(Id, x => x.Rates.Select(y => y.TypeTechnology));
+            return new
+            {
+                Id = model.Id,
+                Name = model.Name,
+                State = model.State,
+                City = model.City,
+                Email = model.Email,
+                Rates = model.Rates.Select(x => new
+                {
+                    TypeTechnology = x.idTypeTechnology,
+                    Description = x.TypeTechnology.Description,
+                    Rate = x._Rate,
+                }).OrderByDescending(x => x.Rate)
+            };
+        }
 
         public bool DeleteTalent(Guid Id)
         {
@@ -73,7 +91,7 @@ namespace TalentsCRUD.Service
         }
         public Talent EditTalent(Guid Id)
         {
-            return talentRepository.Get(Id);
+            return talentRepository.Get(Id, x => x.Bank, x => x.Rates);
         }
     }
 }

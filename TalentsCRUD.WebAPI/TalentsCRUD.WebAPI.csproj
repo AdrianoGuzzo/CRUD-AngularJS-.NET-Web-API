@@ -323,7 +323,7 @@
     <Content Include="Scripts\Controller\editController.js" />
     <Content Include="Scripts\Controller\homeController.js" />
     <Content Include="Scripts\Controller\newController.js" />
-    <Content Include="Scripts\css\main.css" />
+    <Content Include="CSS\main.css" />
     <Content Include="Scripts\directive\questionDirective.js" />
     <Content Include="Scripts\directive\rateDirective.js" />
     <Content Include="Scripts\errors.json" />

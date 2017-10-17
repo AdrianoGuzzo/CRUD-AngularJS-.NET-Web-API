@@ -14,5 +14,6 @@ namespace TalentsCRUD.Service.Interface
         object ListTalent();
         bool DeleteTalent(Guid Id);
         Talent EditTalent(Guid Id);
+        object ViewTalent(Guid Id);
     }
 }

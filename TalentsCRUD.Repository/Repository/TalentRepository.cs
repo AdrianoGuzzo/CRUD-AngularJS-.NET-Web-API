@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using TalentsCRUD.DBContext;
@@ -30,9 +31,9 @@ namespace TalentsCRUD.Repository
         {
             return base.Read(x => x.Status == EnumStatus.Active, true);
         }
-        public Talent Get(Guid Id)
+        public Talent Get(Guid Id, params Expression<Func<Talent, object>>[] includes)
         {
-            return base.Find(Id, x => x.Rates, x => x.Bank);
+            return base.Find(Id, includes);
         }
         public bool Delete(Guid Id)
         {

@@ -14,6 +14,8 @@
     };
 
     angular.element(document).ready(function () {
-        Materialize.updateTextFields();
+        setTimeout(function () {
+            Materialize.updateTextFields();
+        }, 100);
     });
 });

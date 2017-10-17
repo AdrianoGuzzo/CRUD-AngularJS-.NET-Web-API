@@ -11,9 +11,9 @@
 
         template: '<div class="row">' +
                  '<div class="col s12 col-xs-12 col-sm-12 col-lg-12">' +
-                    '<h5>{{obj.title}} <span style="color:red" ng-show="obj.isRequired" >*<span></h5>' +
+                    '<h5 >{{obj.title}} <span style="color:red" ng-show="obj.isRequired" >*<span></h5>' +
                 '</div>' +
-                '<div class="col s3 col-xs-3 col-sm-3 col-lg-3">' +
+                '<div class="col s3 col-xs-3 col-sm-3 col-lg-3 center-align" style="padding-top: 10px;">' +
                     'Nao conheco / I don\'t know' +
                 '</div>' +
                 '<div class="col s1 col-xs-1 col-sm-1 col-lg-1">' +
@@ -40,7 +40,7 @@
                     '<input class="with-gap" name="{{obj.id}}Group" type="radio" ng-model="obj.model.Rate" id="{{obj.id}}Rate5" value="5" ng-required="obj.isRequired"//>' +
                     '<label for="{{obj.id}}Rate5">5</label>' +
                 '</div>' +
-                '<div class="col s3 col-xs-3 col-sm-3 col-lg-3">' +
+                '<div class="col s3 col-xs-3 col-sm-3 col-lg-3 center-align" style="padding-top: 10px;">' +
                     'Senior' +
                 '</div>' +
             '</div>',

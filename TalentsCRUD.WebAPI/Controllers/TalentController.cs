@@ -35,8 +35,7 @@ namespace TalentsCRUD.WebAPI.Controllers
         {
             try
             {
-
-               return Ok(new { Status = talentService.UpdateTalent(model.TalentModelViewToTalent()) });
+                return Ok(new { Status = talentService.UpdateTalent(model.TalentModelViewToTalent()) });
             }
             catch (Exception ex)
             {
@@ -81,6 +80,21 @@ namespace TalentsCRUD.WebAPI.Controllers
             try
             {
                 return Ok(new { Status = true, Data = talentService.DeleteTalent(Id) });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new { Status = false, erros = returnError(ex) });
+            }
+
+        }
+
+        [HttpGet]
+        [Route("api/viewTalent/{Id}")]
+        public IHttpActionResult viewTalent(Guid Id)
+        {
+            try
+            {
+                return Ok(new { Status = true, Data = talentService.ViewTalent(Id) });
             }
             catch (Exception ex)
             {
