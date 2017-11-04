@@ -60,7 +60,7 @@ namespace TalentsCRUD.WebAPI.Controllers
 
         [HttpGet]
         [Route("api/editTalent/{Id}")]
-        public IHttpActionResult editTalent(Guid Id)
+        public IHttpActionResult EditTalent(Guid Id)
         {
             try
             {
@@ -75,7 +75,7 @@ namespace TalentsCRUD.WebAPI.Controllers
 
         [HttpGet]
         [Route("api/deleteTalent/{Id}")]
-        public IHttpActionResult deleteTalent(Guid Id)
+        public IHttpActionResult DeleteTalent(Guid Id)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace TalentsCRUD.WebAPI.Controllers
 
         [HttpGet]
         [Route("api/viewTalent/{Id}")]
-        public IHttpActionResult viewTalent(Guid Id)
+        public IHttpActionResult ViewTalent(Guid Id)
         {
             try
             {

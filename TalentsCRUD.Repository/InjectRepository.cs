@@ -10,7 +10,7 @@ namespace TalentsCRUD
 {
     public class InjectRepository
     {
-        private DBContext.DBContext context=new DBContext.DBContext();
+        private DBContext.DBContext context = new DBContext.DBContext();
 
         private ITalentRepository talentRepository;
         public ITalentRepository GetTalentRepository()

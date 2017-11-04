@@ -324,8 +324,8 @@
     <Content Include="Scripts\Controller\homeController.js" />
     <Content Include="Scripts\Controller\newController.js" />
     <Content Include="CSS\main.css" />
-    <Content Include="Scripts\directive\questionDirective.js" />
-    <Content Include="Scripts\directive\rateDirective.js" />
+    <Content Include="Scripts\Directive\questionDirective.js" />
+    <Content Include="Scripts\Directive\rateDirective.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-touch.min.js.map" />

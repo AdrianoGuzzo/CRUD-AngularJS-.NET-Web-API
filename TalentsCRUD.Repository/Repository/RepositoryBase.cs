@@ -10,7 +10,7 @@ using TalentsCRUD.Model;
 
 namespace TalentsCRUD.Repository
 {
-    public class RepositoryBase<TModel> where TModel : ModelBase
+    public abstract class RepositoryBase<TModel> where TModel : ModelBase
     {
         protected DBContext.DBContext context;
 
